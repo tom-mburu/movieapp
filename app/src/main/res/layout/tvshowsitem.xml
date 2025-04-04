@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="#454242"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    app:cardCornerRadius="10dp"
+    android:elevation="15dp"
+
+
+    android:layout_height="200dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <LinearLayout
+
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/tvbackdrop"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:scaleType="centerCrop"/>
+            <TextView
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:id="@+id/tvshowname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="show name"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight=".7"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvshowoverview"
+                android:textColor="@color/white"
+                android:paddingLeft="10dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="overview"
+                android:textSize="18sp"/>
+            <RatingBar
+                android:layout_gravity="right|bottom"
+                android:backgroundTint="@color/white"
+                android:id="@+id/tvshowratingbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="?android:attr/ratingBarStyleSmall"
+                android:numStars="5"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
